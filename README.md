@@ -10,6 +10,7 @@ This repository contains code from my master's thesis, focused on using machine 
 - `Data_processing.py` — Contains functions for normalizing, cleaning, and transforming data for modeling.
 - `Resnet_model.py` — Implements a ResNet-based architecture for classification or regression tasks.
 - `SENet.py` — Implements a Squeeze-and-Excitation block 
+- `test_script.ipynb` — Notebook to apply test dataset to models. Includes additional testing functions to gain more understanding of what is happening under the hood. 
 - `LICENSE` — Distributed under the GNU General Public License v3.
 - `README.md` — You're reading it!
 
