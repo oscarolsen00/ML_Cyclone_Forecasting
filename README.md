@@ -11,8 +11,8 @@ This repository contains code from my master's thesis, focused on using machine 
 - `Resnet_model.py` — Implements a ResNet-based architecture for classification or regression tasks.
 - `SENet.py` — Implements a Squeeze-and-Excitation block 
 - `test_script.ipynb` — Notebook to apply test dataset to models. Includes additional testing functions to gain more understanding of what is happening under the hood. 
+- `U-Net_pipeline` — This is a work in progress currently building a pipeline for a U-Net architecture
 - `LICENSE` — Distributed under the GNU General Public License v3.
-- `README.md` — You're reading it!
 
 ---
 
