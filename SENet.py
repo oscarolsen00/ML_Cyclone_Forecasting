@@ -291,7 +291,7 @@ def train_model(model, train_loader, val_inputs=None, val_coords=None, val_label
     return model, train_losses, val_losses
 
 # ---------------------------
-# 1️⃣ Initialize Device
+# Initialize Device
 # ---------------------------
 device = torch.device(
     "mps" if torch.backends.mps.is_available()
@@ -302,7 +302,7 @@ device = torch.device(
 print(f"Using device: {device}")
 
 # ---------------------------
-# 2️⃣ Initialize Model
+# Initialize Model
 # ---------------------------
 input_channels = train_inputs.shape[-1]  # this should be the number of channels in your ERA5 data
 model = SDS_SENetWithCoords(input_channels)
@@ -311,14 +311,14 @@ model.to(device)
 print("Model initialized and moved to device.")
 
 # ---------------------------
-# 3️⃣ Define Hyperparameters
+# Define Hyperparameters
 # ---------------------------
 learning_rate = 1e-4
 weight_decay = 1e-4
 epochs = 30
 
 # ---------------------------
-# 4️⃣ Train the Model
+# Train the Model
 # ---------------------------
 trained_model, train_losses, val_losses = train_model(
     model,
@@ -330,7 +330,7 @@ trained_model, train_losses, val_losses = train_model(
 )
 
 # ---------------------------
-# 5️⃣ Save the Model
+# Save the Model
 # ---------------------------
 model_name = "SENet.pth"
 torch.save(trained_model.state_dict(), model_name)
